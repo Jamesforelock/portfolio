@@ -1,0 +1,251 @@
+/* Установка и подключение шрифта */
+@font-face {
+    font-family: SFProDisplay; /* Гарнитура шрифта */
+    src: url(fonts/SFProDisplay-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: CarroisGothicSC;
+    src: url(fonts/CarroisGothicSC-Regular.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: SFProDisplay, 'Arial', cursive;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+/* HEADER ////////////////////////////////////// */
+.header {
+    background-color: #EBEBEB;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.profile-name {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: CarroisGothicSC;
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #1C1C1C;
+}
+.profile-status {
+    color: #525252;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.profile-address {
+    margin-top: 25px;
+    font-weight: bolder;
+    color: #616060;
+}
+.profile-contacts {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.profile-contacts>li {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.profile-contacts>:first-child {
+    margin-left: 0;
+}
+.contacts-icon {
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+.contacts-link {
+    text-decoration: none;
+    color: #525252;
+}
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blackline{
+    border: none;
+    height: 3px;
+    width: 10%;
+    color: black;
+    background-color: black;
+    margin: 0;
+}
+/* MAIN ////////////////////////////////////// */
+.main {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.greyline {
+    background-color: lightgrey;
+    display: flex;
+    width: 100%;
+    height: 3px;
+    margin-top: 10px;
+}
+.title1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.title2 {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.title3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.p {
+    color: #525252;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.main-bottom-container {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.bottom-container-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-container-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills {
+    padding: 0;
+    font-weight: bolder;
+    font-size: 20px;
+    list-style-type: upper-roman;
+    margin-left: 20px;
+}
+.skill {
+    padding-bottom: 15px;
+}
+.project-title {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.taygeta-link {
+    text-decoration: none;
+    color: #525252;
+    transition: color 0.5s linear;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.taygeta-anim {
+        height: auto;
+        width: 100%;
+    }
+.taygeta-link:hover {
+    color: darkorchid;
+}
+.taygeta-link:hover  .taygeta-logo{
+    fill: darkorchid;
+    stroke: darkorchid;
+    -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.taygeta-logo{
+    fill: rgba(80, 80, 80, 0.3);
+    stroke: rgba(80, 80, 80);
+    width: 60px;
+    height: 60px;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition:  stroke, fill, transform 1s ease-in-out;
+}
+
+@media only screen and (max-width: 930px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header {
+        background-color: #EBEBEB;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .profile-name {
+        margin-top: 20px;
+    }
+    .profile-status {
+        color: #525252;
+        font-weight: bolder;
+        margin-top: 15px;
+    }
+    .profile-contacts {
+        margin-top: 40px;
+    }
+    .contacts-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .contact-text {
+        display: none;
+    }
+    .blackline:first-of-type {
+        display: none;
+    }
+    .main-bottom-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .bottom-container-left {
+        width: 100%;
+    }
+    .bottom-container-right {
+        width: 100%;
+    }
+
+}
