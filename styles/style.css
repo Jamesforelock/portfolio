@@ -173,7 +173,7 @@ body {
     padding-bottom: 5px;
     margin-top: 10px;
 }
-.taygeta-anim {
+.project-img {
         height: auto;
         width: 100%;
     }
@@ -193,6 +193,19 @@ body {
     height: 60px;
     -webkit-transition: -webkit-transform 1s ease-in-out;
     transition:  stroke, fill, transform 1s ease-in-out;
+}
+.whitesolar-link {
+    text-decoration: none;
+    color: #525252;
+    transition: color 0.5s linear;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.whitesolar-link:hover {
+    color: black;
 }
 
 @media only screen and (max-width: 930px){
